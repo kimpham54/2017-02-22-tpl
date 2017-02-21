@@ -160,32 +160,27 @@ eventbrite:
 -->
 <h2 id="schedule">Schedule</h2>
 
-<!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Day 1, February 22, 2017</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>10:15</td> <td>Break (15 min.)</td> </tr>
+      <tr> <td>10.30</td> <td>Introduction to Regular Expressions (Regex)</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>13:00</td>  <td>Cleaning data with OpenRefine</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee (15 min.)</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>09:00</td>  <td>Working with Python (Part 1)</td> </tr>
+      <tr> <td>10:15</td>  <td>Break (15 min.)</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>13:00</td>  <td>Working with Python (Part 2)</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee (15 min.)</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
@@ -244,9 +239,36 @@ eventbrite:
       <li>Looping over files</li>
       <li>Creating and running shell scripts</li>
       <li>Finding things</li>
-      <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
+      <!-- <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>-->
     </ul>
   </div>
+  
+  <div class="col-md-6">
+    <h3 id="syllabus-regex">Regular Expressions (Regex)</h3>
+    <ul>
+      <li>Introduction</li>
+      <li>Basic Operators</li>
+      <li>Character Sets and Classes</li>
+      <li>Anchors</li>
+      <li>Grouping</li>
+      <li>Quantifiers</li>
+      <li>Practice using https://regex101.com/</li>
+      <!-- Insert link when ready <li><a href="http://swcarpentry.github.io//insert">Reference...</a></li>-->      
+   </ul>
+  </div>
+  
+   <div class="col-md-6">
+    <h3 id="syllabus-openrefine">Introduction to OpenRefine</h3>
+    <ul>
+      <li>Data format conversion</li>
+      <li>Transformations</li>
+      <li>Cluster edit data</li>
+      <li>Reconciliation</li>
+      <li>Templating data</li>
+      <!-- Insert link when ready <li><a href="http://swcarpentry.github.io//insert">Reference...</a></li>-->
+    </ul>
+  </div>
+  
   <div class="col-md-6">
     <h3 id="syllabus-python">Programming in Python</h3>
     <ul>
@@ -257,7 +279,7 @@ eventbrite:
       <li>Loops and conditionals</li>
       <li>Defensive programming</li>
       <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
+      <!-- Insert link when ready <<li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>-->
     </ul>
   </div>
   <!--
@@ -288,6 +310,7 @@ eventbrite:
    -->
 </div>
 
+<!--
 <div class="row">
   <div class="col-md-6">
     <h3 id="syllabus-git">Version Control with Git</h3>
@@ -318,6 +341,7 @@ eventbrite:
     </ul>
   </div>
 </div>
+-->
 
 <hr/>
 
@@ -438,7 +462,8 @@ eventbrite:
 
 <div id="git"> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
-  <h3>Git</h3>
+<!--
+<h3>Git</h3>
   <p>
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
@@ -490,7 +515,81 @@ eventbrite:
       </p>
     </div>
   </div>
-</div> <!-- End of 'Git' section. -->
+-->
+</div> <!-- End of 'Git' section. -->  
+
+<div id="regex"> <!-- Start of 'regex' section. -->
+  <h3>Regular Expressions (Regex)</h3>
+
+  <p>
+     No installation required -- we will be using a browser-based tool during the workshop.
+  </p>
+
+<div id="openrefine"> <!-- Start of 'OpenRefine' section. -->
+  <h3>OpenRefine</h3>
+
+  <p>
+    <a href="http://openrefine.org/">OpenRefine</a> (formerly Google Refine) is a powerful tool for working with messy data:
+	cleaning it; transforming it from one format into another; and extending it with web services and external data.
+
+	Please look at the <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions">Installation Instructions</a>
+	from the OpenRefine project for more details on how to run OpenRefine on your machine. The instructions below are adapted from this link.
+	We will be using <a href="https://github.com/OpenRefine/OpenRefine/releases/tag/2.6-rc.2">version 2.6-rc2</a> during the
+	workshop.
+
+	A <a href="https://www.java.com/en/download/manual.jsp">Java Runtime Environment (JRE)</a> is required to run OpenRefine. If the installation procedure below fails, make sure you have
+	a working JRE installed on your computer.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="sql-windows">Windows</h4>
+      <ol>
+        <li><a href="https://github.com/OpenRefine/OpenRefine/releases/download/2.6-rc.2/openrefine-win-2.6-rc.2.zip">Download OpenRefine v. 2.6-rc2 for Windows</a></li>
+		<li>Once you have downloaded the .zip file, uncompress it into a folder wherever you want (such as in C:\Open-Refine).</li>
+		<li>To launch OpenRefine, run the .exe file in that folder. You should see the Command window in which OpenRefine runs.</li>
+		<li>To shut down OpenRefine, press <code>Ctrl-C</code> in the command window that is running OpenRefine. Wait until there's a message that says the shutdown is complete.
+		That window might close automatically, or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-macosx">Mac OS X</h4>
+      <ol>
+        <li><a href="https://github.com/OpenRefine/OpenRefine/releases/download/2.6-rc.2/openrefine-mac-2.6-rc.2.dmg">Download OpenRefine v. 2.6-rc2 for Mac</a></li>
+		<li>Once you have downloaded the .dmg file, open it, and drag the OpenRefine icon into the Applications folder.</li>
+		<li>To launch OpenRefine, double-click the OpenRefine app. You'll see the OpenRefine app appear in your dock.</li>
+		<li>If you get an error message preventing you from opening the app because it's from an unidentified developer,
+			do the following (you only have to do it once when you open the app for the first time):
+		<ol>
+			<li>Press the <code>ctrl</code> (Control) key and click on the app icon</li>
+			<li>Choose Open from the shortcut menu</li>
+			<li>There should now be an Open button under the "unidentified developer" error message. Click that button to open the app.</li>
+		</ol></li>
+		<li>To shut down OpenRefine, right-click on its icon in the Dock and choose the <em>Quit</em> option.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-linux">Linux</h4>
+      <ol>
+        <li><a href="https://github.com/OpenRefine/OpenRefine/releases/download/2.6-rc.2/openrefine-linux-2.6-rc.2.tar.gz">Download OpenRefine v. 2.6-rc2 for Linux</a></li>
+		<li>Once you have downloaded the .tar.gz file, uncompress it into a folder wherever you want.</li>
+		<li>To launch OpenRefine, open a shell, navigate to that folder and type <code>./refine</code></li>
+		<li>To shut down OpenRefine, press <code>Ctrl-C</code> in the shell that is running OpenRefine.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>Running OpenRefine</h4>
+  <p>
+  OpenRefine is operated from within a web browser (such as Chrome or Firefox).
+  If your browser doesn't open automatically when you start OpenRefine (see above),
+  navigate to <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> in your favourite browser to open the OpenRefine window.
+  Please note that even though you use a browser to operate OpenRefine, it is still run locally on your machine, and not on the web.
+  </p>
+
+</div> <!-- End of 'OpenRefine' section. -->
+
+
 
 <div id="editor"> <!-- Start of 'editor' section. -->
   <h3>Text Editor</h3>
@@ -643,8 +742,10 @@ eventbrite:
 -->
 </div> <!-- End of 'Python' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
+<!-- uncomment this div element if you are teaching R but keep the "Start of 'R' section." comment
+<div id="r"> --> <!-- Start of 'R' section. -->
+<!-- uncomment this section if you are teaching R 
+<h3>R</h3>
 
   <p>
     <a href="http://www.r-project.org">R</a> is a programming language
@@ -692,10 +793,17 @@ eventbrite:
       </p>
     </div>
   </div>
-</div> <!-- End of 'R' section. -->
+</div> 
+-->
+<!-- End of 'R' section. -->
 
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
+
+<!-- uncomment this div element if you are teaching SQLite but keep the "Start of 'SQLite' section." comment
+<div id="sql">
+-->
+<!-- Start of 'SQLite' section. -->
+<!-- uncomment following section if you are teaching SQLite
+<h3>SQLite</h3>
 
   <p>
     SQL is a specialized programming language used with databases.  We
@@ -729,7 +837,9 @@ eventbrite:
   <p><strong>If you installed Anaconda, it also has a copy of SQLite
     <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
     Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
+</div>
+--> 
+<!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
