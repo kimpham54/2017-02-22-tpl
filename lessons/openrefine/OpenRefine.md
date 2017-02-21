@@ -1,5 +1,5 @@
 ---
-Software/Library Carpentry - July 28-29, 2016
+Library Carpentry - February 22nd, 2017
 ---
 ## Setup
 Please look at the Installation Instructions from the OpenRefine project for more details on how to run OpenRefine on your machine. The instructions below are adapted from this [link](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions). We will be using version [2.6-rc2](https://github.com/OpenRefine/OpenRefine/releases/tag/2.6-rc.2) during the workshop. A [Java Runtime Environment (JRE)]('https://www.java.com/en/download/manual.jsp') is required to run OpenRefine. If the installation procedure below fails, make sure you have a working JRE installed on your computer.
@@ -65,7 +65,7 @@ Some common scenarios might be:
 | London]         | London       |
 | London,]        | London       |
 | london          | London       |
- 
+
 * Where you have several bits of data combined together in a single column, and you want to separate them out into individual bits of data with one column for each bit of the data. For example going from a single address field (in the first column), to each part of the address in a separate field:
 
 | Address in single field | Institution  | Library name  | Address 1 | Address 2 | Town/City | Region | Country | Postcode |
@@ -213,7 +213,7 @@ As well as 'Text facets' Refine also supports a range of other types of facet. T
 * **Text length facet** - creates a numeric facet based on the length (number of characters) of the text in each row for the selected column. This can be useful for spotting incorrect or unusual data in a field where specific lengths are expected (e.g. if the values are expected to be years, any row with a text length more than 4 for that column is likely to be incorrect)
 * **Facet by blank** - a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if they have no data present in that column. This is useful when looking for rows missing key data.
 
-Facets are intended to group together common values and OpenRefine limits the number of values allowed in a single facet to ensure the software does not perform slowly or run out of memory. If you create a facet where there are many unique values (for example, a facet on a 'book title' column in a data set that has one row per book) the facet created will be very large and may either slow down the application, or OpenRefine will not create the facet. 
+Facets are intended to group together common values and OpenRefine limits the number of values allowed in a single facet to ensure the software does not perform slowly or run out of memory. If you create a facet where there are many unique values (for example, a facet on a 'book title' column in a data set that has one row per book) the facet created will be very large and may either slow down the application, or OpenRefine will not create the facet.
 
 ## Exercise 4: Find all publications without a DOI
 * Use the 'Facet by blank' function to find all publications in this data set without a DOI
@@ -383,11 +383,11 @@ So far we've been looking only at 'String' type data. Much of the time it is pos
 #### Booleans
 Booleans and Arrays are data types that are more often used while manipulating data in a GREL expression than for actually storing in a cell (in fact, Arrays cannot be stored in a cell in OpenRefine).
 
-A 'Boolean' is a binary value that can either be 'true' or 'false'. Boolean values can be used directly in OpenRefine cell, but is more often used in transformations as part of a GREL expression. For example the GREL expression 
+A 'Boolean' is a binary value that can either be 'true' or 'false'. Boolean values can be used directly in OpenRefine cell, but is more often used in transformations as part of a GREL expression. For example the GREL expression
 ```
 value.contains("test")
 ```
-generates a boolean value of either 'true' or 'false' depending on whether the current value in the cell contains the text 'test' anywhere. 
+generates a boolean value of either 'true' or 'false' depending on whether the current value in the cell contains the text 'test' anywhere.
 
 Such tests can be combined with other GREL expressions to create more complex transformations. For example, to carry out a further transformation only if a test is successful. The GREL transformation ```if(value.contains("test"),"Test data",value)``` replaces a cell value with the words "Test data" only *if* the value in the cell contains the string "test" anywhere.
 
@@ -422,7 +422,7 @@ For example
 ```
 value.split(",")[0]
 ```
-would extract the first value from the array created by the 'split' function. In the above example this would be "Monday". 
+would extract the first value from the array created by the 'split' function. In the above example this would be "Monday".
 
 You can also join arrays together to make a 'String'. The GREL expression would look like
 ```
@@ -599,7 +599,7 @@ As well as looking up data in external systems using the methods described above
 
 The ‘cross’ function takes a value from the OpenRefine project you are working on, and looks for that value in a column in another OpenRefine project. If it finds one or more matching rows in the second OpenRefine project, it returns an array containing the rows that it has matched.
 
-As it returns the whole row for each match, you can use a transformation to extract the values from any of the columns in the 
+As it returns the whole row for each match, you can use a transformation to extract the values from any of the columns in the
 
 You can use to compare the contents of two OpenRefine projects, or to use data between the two projects.
 
